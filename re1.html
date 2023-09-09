@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>revision -1</title>
+    <link rel="stylesheet" type="text/css" href="csre1.css" />
+  </head>
+  <body>
+    <h1>Docker kubernetes commands and important notes</h1>
+    <h2>docker is a containerization technology</h2>
+    <div class="flex-cont">
+      <div>
+        <h2>docker pull image_name</h2>
+        <h2>docker push image_id/name</h2>
+        <h2>docker search image_name</h2>
+        <h2>docker rmi image_id/name</h2>
+        <h2>docker rmi -f image_id/name</h2>
+        <h2>docker save image_name</h2>
+        <h2>docker load tarfile_name</h2>
+        <h2>docker system prune -af</h2>
+        <h2>docker image inspect image_name/id</h2>
+        <h2>docker build -t dockerfile_name .</h2>
+        <h2>docker commit container_id/name image_name</h2>
+      </div>
+      <div>
+        <h2>
+          docker run image_name <br />
+          --name<br />
+          --restart<br />
+          --link<br />
+          --network<br />
+          --volumes-from <br />
+          -p<tab /> -P<tab /> -e<tab /> -rm<tab /> -d<tab /> -it<tab />
+          -c<tab /> -m<tab />
+          -ip
+        </h2>
+        <h2>docker container ls</h2>
+        <h2>docker ps -a</h2>
+        <h2>docker rm contianer_id/name</h2>
+        <h2>docker rm -f container_id/name</h2>
+        <h2>docker rm -f $(docker ps -aq)</h2>
+        <h2>docker start container_id/name</h2>
+        <h2>docker stop container_id/name</h2>
+        <h2>docker restart -t container_id/name</h2>
+        <h2>docker inspect container_id/name</h2>
+        <h2>docker logs container_id/name</h2>
+        <h2>docker port container_id/name</h2>
+        <h2>docker exec -it container_id/name process_name</h2>
+        <h2>ctrl+p ctrl +q</h2>
+        <h2>docker container container_id/name top</h2>
+      </div>
+      <div>
+        <h2>docker network ls</h2>
+        <h2>docker network inspect network_name/id</h2>
+        <h2>docker network create --driver network_type network_name</h2>
+        <h2>docker network rm network_name/id</h2>
+        <h2>docker network connect network_name/id container_id/name</h2>
+        <h2>docker network disconnect network_name/id container_id/name</h2>
+      </div>
+      <div>
+        <h2>docker volume ls</h2>
+        <h2>docker volume inspect volume_name/id</h2>
+        <h2>docker volume create volume_name/id</h2>
+        <h2>docker volume rm volume_name/id</h2>
+      </div>
+    </div>
+    <script src="jsre1.js"></script>
+  </body>
+</html>
